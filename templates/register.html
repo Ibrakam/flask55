@@ -6,12 +6,24 @@
 </head>
 <body>
 <h1>Hello user</h1>
-{{form.name.label}}
-{{form.name}}
+<form method="POST" >
+    {{ form.hidden_tag() }}
 
+    {{form.name.label}}
+    {{form.name}}
+    <br>
+   {{form.email.label}}
+    {{form.email}}
+     <br>
+    {{form.password.label}}
+    {{form.password}}
+     <br>
+    {{form.password2.label}}
+    {{form.password2}}
 
-<br>
-<br>
-{{form.button}}
+    <br>
+    <br>
+    {{form.button}}
+</form>
 </body>
 </html>
